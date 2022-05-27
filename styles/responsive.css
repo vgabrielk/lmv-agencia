@@ -1,0 +1,54 @@
+@import url(variables.css);
+@media(max-width: 756px) {
+    .menu-mobile {
+        display: block!important;
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        z-index: 999;
+    }
+    .home-page {
+        height: 100vh!important;
+    }
+    .home-page__texts{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .home-page__texts h1 {
+        font-size: 2rem!important;
+        text-align: center;
+        width: 10%;
+    }
+    .header .nav {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .header {
+        height: 100vh!important;
+        transform: translateX(-800px);
+        transition: .5s ease;
+        position: fixed;
+        background-color: var(--cinzaEscuro)!important;
+        width: 90%!important;
+    }
+    .header.menuOpen{
+        transform: translateX(0px);
+    }
+    .header .ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header .btn-cta{
+        margin-top: 1rem!important;
+        color: #fff!important;
+    }
+    .header .logo {
+        display: none;
+    }
+}

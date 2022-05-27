@@ -1,0 +1,27 @@
+@import url(../../styles/variables.css);
+.carousel-indicators [data-bs-target] {
+    width: 18px!important;
+    height: 18px!important;
+    border-radius: 50%!important;
+}
+
+.home-page{
+    height: 92vh;
+    width: auto;
+    background: url(/images/bg-lmv.png);
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+}
+.home-page__texts {
+    font-family: var(--fontePadrao);
+}
+.home-page__texts h1 {
+    color: var(--branco);
+    width: 580px;
+    font-size: 4rem;
+    word-wrap: break-word;
+
+}

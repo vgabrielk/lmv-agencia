@@ -1,0 +1,25 @@
+@import url(responsive.css);
+@import url(../pages/Header/header.css);
+@import url(../pages/HomePage/home.css);
+@import url(../pages/Services/services.css);
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;900&display=swap');
+/* font-family: 'MuseoModerno', cursive; */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body {
+    background-color: var(--cinza)!important;
+}
+a {
+    text-decoration: none;
+}
+.btn:focus{
+    box-shadow: 0 0 0 0rem transparent!important;
+}
+.bg-cinzaEscuro {
+    background-color: var(--cinzaEscuro) !important;
+    color: var(--branco);
+}
+    

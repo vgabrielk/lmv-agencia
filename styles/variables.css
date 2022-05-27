@@ -1,0 +1,13 @@
+:root {
+    /* CORES */
+    --branco: #fff;
+    --azul: #0047FF;
+    --rosa: #FF007A;
+    --cinza: #333333;
+    --cinzaEscuro: #222;
+    --cinzaClaro: #777777;
+    --amarelo: rgb(255, 196, 0);
+
+    /* FONTES */
+    --fontePadrao: 'MuseoModerno', cursive;
+}
