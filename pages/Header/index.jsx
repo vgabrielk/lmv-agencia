@@ -21,26 +21,36 @@ const Header = () => {
         <>
             {menuMob ? <ImMenu color='light' onClick={() => setMenuMob(!menuMob)} className='menu-mobile text-light' size={30} /> : <MdOutlineClose onClick={() => setMenuMob(!menuMob)} className='menu-mobile text-light' size={30} />}
 
-            <div className={menuMob ? "header w-100" : "header w-100 menuOpen" }>
+            <div className={menuMob ? "header " : "header menuOpen"}>
                 <Container className="nav">
                     <Link className='logo' href="/">
-                        <Image
-                            src={"/images/logo.png"}
-                            width="70px"
-                            height="70px"
+                        <>
+                            <Image
+                                src={"/images/logo.png"}
+                                width="70px"
+                                height="70px"
 
-                        />
+                            />
+                        </>
                     </Link>
                     <div className='text-light d-flex ul'>
                         <div className="social-icons">
-                            <Link href='' target="_blank" color="transparent">
-                                <FaLinkedin size={30} className="mx-2 text-light social" />
+                            <Link href='#' target="_blank" color="transparent">
+                                <>
+
+                                    <FaLinkedin size={30} className="mx-2 text-light social" />
+                                </>
                             </Link>
                             <Link href='https://instagram.com/agencialmv' target="_blank" color="transparent" >
-                                <AiFillInstagram size={30} className="mx-2 text-light social" />
+                                <>
+
+                                    <AiFillInstagram size={30} className="mx-2 text-light social" />
+                                </>
                             </Link>
-                            <Link href='' target="_blank" color="transparent">
-                                <IoLogoWhatsapp size={30} className="mx-2 text-light social" />
+                            <Link href='#' target="_blank" color="transparent">
+                                <>
+                                    <IoLogoWhatsapp size={30} className="mx-2 text-light social" />
+                                </>
                             </Link>
                         </div>
                         <Button

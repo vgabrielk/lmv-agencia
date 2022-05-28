@@ -34,7 +34,7 @@
         transition: .5s ease;
         position: fixed;
         background-color: var(--cinzaEscuro)!important;
-        width: 90%!important;
+        width: 50vw!important;
     }
     .header.menuOpen{
         transform: translateX(0px);
@@ -50,5 +50,10 @@
     }
     .header .logo {
         display: none;
+    }
+}
+@media(max-width: 520px){
+    .header {
+        width: 80vw!important;
     }
 }
