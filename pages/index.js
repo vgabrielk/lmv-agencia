@@ -2,6 +2,9 @@ import Header from './Header'
 import HomePage from './HomePage'
 import Head from 'next/head';
 import Services from './Services';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import SliderView from './Slider';
 <Head>
   <title>Create Next App</title>
   <meta property='og:title' content='Agência LMV' />
@@ -15,6 +18,7 @@ export default function Home() {
       <Header />
       <HomePage />
       <Services />
+      <SliderView />
     </>
   )
 }

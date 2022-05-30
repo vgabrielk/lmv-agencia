@@ -3,14 +3,16 @@
 
 .services {
     height: auto;
-    margin-bottom: 3rem;
 }
 
-.services p {
-    color: var(--cinzaClaro);
+.services h4 {
+    color: var(--azul);
+    font-weight: 400;
+}
+
+.services h5 {
     margin-top: 1rem;
-    text-align: justify;
-    font-style: italic;
+    font-weight: 300;
 }
 
 label {
@@ -20,3 +22,32 @@ label {
 .icon {
     color: var(--amarelo);
 }
+
+.accordion-button::after {
+    background: url(/images/cross.svg)!important;
+}
+.accordion-button{
+    background-color: var(--bgColor)!important;
+    border: 1px solid var(--azul)!important;
+}
+.accordion-button.collapsed{
+    background-color: var(--bgColor)!important;
+    border: 1px solid var(--azul)!important;
+}
+.accordion-button:focus {
+    z-index: 3;
+    border: 0 !important;
+    outline: 0;
+    box-shadow: 0 0 0 0.0rem rgba(13, 109, 253, 0)!important;
+    background-color: var(--bgColor)!important;
+    border: 1px solid var(--azul)!important;
+}
+
+.accordion-body {
+    background-color: var(--azul);
+    color: var(--branco);
+    text-align: start;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+

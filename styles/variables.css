@@ -1,13 +1,16 @@
 :root {
     /* CORES */
     --branco: #fff;
-    --azul: #0047FF;
-    --rosa: #FF007A;
-    --cinza: #333333;
-    --cinzaEscuro: #222;
-    --cinzaClaro: #777777;
-    --amarelo: rgb(255, 196, 0);
+    --azul: #001AFF;
+    --azulClaro: #4C99D4;
+    --cinzaTexto: #949494;
+    --bgColor : #F1F1F1;
+
 
     /* FONTES */
     --fontePadrao: 'MuseoModerno', cursive;
+    --fontePrincipal: 'Poppins', sans-serif;
+    --fonteSecundaria: 'Raleway', sans-serif;
+
+
 }

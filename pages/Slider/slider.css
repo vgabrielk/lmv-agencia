@@ -1,0 +1,26 @@
+@import url(../../styles/variables.css);
+
+.slider-content {
+    height: 80vh;
+    background-color: var(--azul);
+    clip-path: polygon(0 0, 100% 16%, 100% 35%, 100% 70%, 100% 87%, 64% 83%, 20% 90%, 0 84%, 0 0, 0 0);
+    font-family: var(--fonteSecundaria);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.slider-content .slider-h3 {
+    font-weight: 900;
+    width: 70%;
+    color: var(--branco);
+    font-family: "Raleway", sans-serif;
+}
+.slick-prev:before{
+    display:none!important ;
+}
+.slick-next:before{
+    font-size: 5rem!important;
+    position: absolute;
+    transform: translateX(-12rem);
+    margin-top: -3rem;
+}

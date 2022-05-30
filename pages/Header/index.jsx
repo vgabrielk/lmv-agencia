@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 /* import Logo from '../../assets/images/logo2.png' */
 
@@ -11,15 +11,19 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import {
-    Button, Container
+    Button, Container, DropdownItem, DropdownMenu, DropdownToggle, UncontrolledButtonDropdown
 } from 'reactstrap'
+
 const Header = () => {
 
     const [menuMob, setMenuMob] = useState(true)
+    const [windowScroll, setWindowScroll] = useState(false)
+
+    
 
     return (
         <>
-            {menuMob ? <ImMenu color='light' onClick={() => setMenuMob(!menuMob)} className='menu-mobile text-light' size={30} /> : <MdOutlineClose onClick={() => setMenuMob(!menuMob)} className='menu-mobile text-light' size={30} />}
+            {menuMob ? <ImMenu color='light' onClick={() => setMenuMob(!menuMob)} className='menu-mobile text-dark' size={30} /> : <MdOutlineClose onClick={() => setMenuMob(!menuMob)} className='menu-mobile text-dark' size={30} />}
 
             <div className={menuMob ? "header " : "header menuOpen"}>
                 <Container className="nav">
@@ -27,8 +31,8 @@ const Header = () => {
                         <>
                             <Image
                                 src={"/images/logo.png"}
-                                width="70px"
-                                height="70px"
+                                width="50px"
+                                height="60px"
 
                             />
                         </>
@@ -38,30 +42,39 @@ const Header = () => {
                             <Link href='#' target="_blank" color="transparent">
                                 <>
 
-                                    <FaLinkedin size={30} className="mx-2 text-light social" />
+
                                 </>
                             </Link>
                             <Link href='https://instagram.com/agencialmv' target="_blank" color="transparent" >
                                 <>
 
-                                    <AiFillInstagram size={30} className="mx-2 text-light social" />
+
                                 </>
                             </Link>
                             <Link href='#' target="_blank" color="transparent">
                                 <>
-                                    <IoLogoWhatsapp size={30} className="mx-2 text-light social" />
+
                                 </>
                             </Link>
                         </div>
-                        <Button
-                            id="PopoverClick"
-                            color='transparent'
-                            type="button"
-                            className='btn-md ms-4 text-light together my-0 fs-800 btn-cta'
-                            style={{ boxShadow: 0 }}
-                        >Falar com especialista
-                            <IoLogoWhatsapp size={20} className="mx-2 text-success m-0 wpp " />
-                        </Button>
+                        <UncontrolledButtonDropdown className='btn-secondary btn btn-sm d-flex justify-content-center'>
+                            <DropdownToggle caret>Falar com especialistas</DropdownToggle>
+                            <DropdownMenu className='mx-auto' >
+                                <DropdownItem className='dropdown'>
+                                    <FaLinkedin size={30} className="mx-2 text-dark social" />
+                                    Linkedin
+                                </DropdownItem>
+                                <DropdownItem className='dropdown'>
+                                    <AiFillInstagram size={30} className="mx-2 text-dark social" />
+                                    Instagram
+                                </DropdownItem>
+                                <DropdownItem className='dropdown'>
+                                    <IoLogoWhatsapp size={30} className="mx-2 text-dark social" />
+                                    Whatsapp
+                                </DropdownItem>
+                            </DropdownMenu>
+                        </UncontrolledButtonDropdown>
+
                     </div>
                 </Container>
             </div>

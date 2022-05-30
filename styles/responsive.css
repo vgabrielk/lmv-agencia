@@ -1,5 +1,5 @@
 @import url(variables.css);
-@media(max-width: 756px) {
+@media(max-width: 768px) {
     .menu-mobile {
         display: block!important;
         position: fixed;
@@ -9,6 +9,7 @@
     }
     .home-page {
         height: 100vh!important;
+        clip-path: polygon(0 0, 26% 0, 68% 0, 100% 0, 100% 19%, 100% 90%, 100% 88%, 0 73%, 0 0, 0 0)!important;
     }
     .home-page__texts{
         display: flex;
@@ -33,7 +34,7 @@
         transform: translateX(-800px);
         transition: .5s ease;
         position: fixed;
-        background-color: var(--cinzaEscuro)!important;
+        background-color: var(--branco)!important;
         width: 50vw!important;
     }
     .header.menuOpen{
@@ -48,12 +49,36 @@
         margin-top: 1rem!important;
         color: #fff!important;
     }
-    .header .logo {
-        display: none;
+    .svg-area{
+        position: absolute!important;
+        height: 0!important;
     }
+    .slick-next:before{
+        display: none!important;
+    }
+    .slider-content {
+        margin-top: -5rem!important;
+        text-align: center;
+        clip-path: polygon(0 0, 26% 0, 68% 0, 100% 0, 100% 19%, 100% 90%, 100% 88%, 0 73%, 0 0, 0 0)!important;
+
+        height: auto!important;
+
+    }
+    .slider-content .slider-h3 {
+        width: 100%!important;
+        color: var(--branco);
+        
+    }
+    
 }
 @media(max-width: 520px){
     .header {
         width: 80vw!important;
+    }
+    .home-page{
+        clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 45%, 0% 0%)!important;
+    }
+    .slider-content{
+        clip-path: polygon(71% 0, 100% 0, 100% 19%, 100% 39%, 100% 44%, 100% 87%, 52% 100%, 0 87%, 0 0, 37% 0)!important;
     }
 }
