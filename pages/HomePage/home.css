@@ -8,9 +8,7 @@
 .home-page{
     height: 92vh;
     width: auto;
-    background: url(/images/bg-lmv.png);
-    background-position: center;
-    background-size: cover;
+    background: linear-gradient(to bottom, red, orange);
     object-fit: cover;
     display: flex;
     align-items: center;
